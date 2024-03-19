@@ -1,13 +1,9 @@
-from selenium import webdriver
+import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import  WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import pytest
 import math
-
-#def calc(answer):
-#    return math.log(int(time.time()))
 
 @pytest.mark.parametrize('Nomber', ["895"])
 def test_time_link(browser, Nomber):
