@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import  WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 link = "https://stepik.org/lesson/236895/step/1"
 
@@ -19,7 +18,6 @@ try:
     browser.find_element(By.CLASS_NAME, "button_with-loader").click()    
         
 finally:
-    time.sleep(15)
     browser.quit()
     
 
